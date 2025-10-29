@@ -1,69 +1,111 @@
-/* General Styles */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f8f9fa;
+  background-image: url('pexels-phong-nguyen-40565-185545new.jpg'); 
+  background-size: cover;         
+  background-repeat: no-repeat;   
+  background-position: center;    
+  background-attachment: fixed;   
   color: #333;
-  line-height: 1.6;
 }
 
-/* Header */
 header {
-  background-color: #004d99;
-  color: white;
-  text-align: center;
-  padding: 2rem 1rem;
+    background-color: #222;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 2.5rem;
+.logo {
+    font-size: 1.3rem;
+    font-weight: bold;
 }
 
-header p {
-  font-size: 1.1rem;
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
 }
 
-/* Sections */
-section {
-  padding: 2rem;
-  max-width: 800px;
-  margin: auto;
-  background: white;
-  margin-bottom: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+nav a.active, nav a:hover {
+    color: #f39c12;
 }
 
-section h2 {
-  color: #004d99;
-  border-bottom: 2px solid #004d99;
-  padding-bottom: 0.5rem;
-  margin-bottom: 1rem;
+
+.hero {
+    background: url('garage.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 150px 20px;
 }
 
-/* List */
-ul {
-  list-style-type: square;
-  padding-left: 20px;
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.6);
+    display: inline-block;
+    padding: 30px;
+    border-radius: 12px;
 }
 
-/* Links */
-a {
-  color: #004d99;
-  text-decoration: none;
+.btn {
+    background-color: #f39c12;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-a:hover {
-  text-decoration: underline;
+.btn:hover {
+    background-color: #d98200;
 }
 
-/* Footer */
+
+.about, .contact, .services, .detail {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service {
+    background: #fafafa;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.service h3 a {
+    text-decoration: none;
+    color: #222;
+}
+
+.service h3 a:hover {
+    color: #f39c12;
+}
+
+
 footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #004d99;
-  color: white;
-  margin-top: 2rem;
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 15px 10px;
+    margin-top: 20px;
 }
+
